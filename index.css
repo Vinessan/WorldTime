@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+*{    
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+    
+
+}
+body{
+    background-color: rgb(51, 14, 14);
+}
+img{
+    width: 100%;
+    height: 100%; 
+    
+}
+.bg_blk{
+    margin-top: -7px;
+    height: 1700px;
+    background-color: rgb(51, 14, 14);
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    width: 100%;
+    background-color: rgb(110, 32, 32);
+}
+.logo a{
+    text-decoration: none;
+    color: #fff;
+}
+.logo{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    
+    
+}
+.logo:hover{
+    color: rgb(80, 21, 21);
+    cursor: pointer;
+}
+.clock_logo{ 
+    width: 50px;
+    cursor: pointer;
+}
+.nav_link{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    cursor: pointer;
+    
+    
+}
+.nav_link li{
+    list-style: none;
+}
+.nav_link a{
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 17px;
+    position: relative;
+}
+.nav_link a:hover{
+    color:rgb(80, 21, 21);
+}
+/*TITLE*/
+
+    
+
+/*Line Bottom*/
+.nav_link a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+}
+.active a::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+}
+.nav_link a:hover::before{
+    width: 100%;
+    transition: width 0.3s linear;
+} 
+
+
+.menu{
+    display: none;
+    cursor: pointer;
+}
+
+.menu div{
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+
+/*Responsividade de Tela*/
+@media screen and (max-width:1024px){
+    .nav_link{
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav_link{
+        position: absolute;
+        right: 0px;
+        height: 36vh;
+        top: 8vh;
+        background-color: #000;
+        opacity: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        
+    }
+    .nav_link li{
+        opacity: 0;
+    }
+    .menu{
+        display: block;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .nav_link {
+width: 30%;
+    }
+}
+.nav_active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 50;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.linesNav .line1{
+transform: rotate(-45deg) translate(-5px,6px);
+
+}
+.linesNav .line2{
+    opacity: 0;
+}
+.linesNav .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+    
+}
+
+/*Title*/
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -43%;
+    color: #fff;
+    font-size: 50px;
+    cursor: pointer;
+    
+}
+.title:hover{
+    color: rgb(80, 21, 21);
+    font-size: 100px;
+    transition: all 0.7s ease-in-out;
+}
+#rodape{
+    
+    width: 100%;
+    top: 240%;
+}
+/*Cookie*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0%;
+    height: 10vh;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+
+}
+
+.cookie a{
+    text-decoration: none;
+    color: rgb(80, 21, 21);
+}
+
+.img_cookie{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1%;
+    width: 20px;
+}
+
+/*Info API*/
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+main{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -100vh;
+    
+}
+
+
+
+.cont{
+    background: rgb(253, 253, 253);
+    border-radius: 1em;
+    width: 250px;
+    height: 250px;
+    margin: 2em;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 15px 30px rgb(0, 0, 0);
+    transition: 1s;
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+td{
+    padding: 5px;
+    text-align: center;
+}
+
+
+
+

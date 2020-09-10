@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="toLocated.css">
+    <link rel="shortcut icon" href="watch.svg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Time - To Located</title>
+</head>
+
+<body>
+    
+    <nav>
+        <div class="clock_logo">
+            <img src="hour.svg" alt="">
+        </div>
+        <div class="logo">
+            <a href="index.html"><h4>World Time</h4></a>
+        </div>
+
+
+        <ul class="nav_link">
+            <li>
+                <a href="index.html">Home</a></li>
+            <li>
+                <a href="myLocal.html">Your Local</a></li>
+            <li class="active">
+                <a href="/toLocated/toLocated.html">To Located</a>
+            </li>
+        </ul>
+        <div class="menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    
+    
+    
+        <header>
+            <img  src="john-towner-JgOeRuGD_Y4-unsplash.jpg" alt="">
+            
+            
+            <div>    
+                <h1 class="title">World Time</h1>
+            </div>
+            <div class="bg_blk"></div>     
+            
+            <section>
+                <select id="continent" onchange="loadLocations(this)">
+                    <option selected hidden>Selecione</option>
+                    <option value="Africa">África</option>
+                    <option value="America">América</option>
+                    <option value="Antarctica">Antártida</option>
+                    <option value="Asia">Ásia</option>
+                    <option value="Atlantic">Oceano Atlântico</option>
+                    <option value="Australia">Austrália</option>
+                    <option value="Europe">Europa</option>
+                    <option value="Indian">Oceano Índico</option>
+                    <option value="Pacific">Oceano Pacífico</option>
+                </select>
+        
+                
+        
+                <select id="location" onchange="showUTC(this)">
+                    <option hidden>Aguardando</option>
+                </select>
+            </section>
+        
+            <main>
+                <div class="container" id="locationUTC"><h1>NULL</h1>
+            </main>
+        </header>  
+
+        
+           
+        
+        
+        
+       
+    <footer id="rodape">
+        <div class="img_cookie">
+            <img src="cookie.svg" alt="">
+        </div>
+        <div class="cookie">
+            <p>We don't use cookies. About more info -> <a href="about.html">Privacy Policy</a></p>
+        </div>
+        
+    </footer>
+    
+    <script src="toLocated.js"></script>
+</body>
+
+</html>
